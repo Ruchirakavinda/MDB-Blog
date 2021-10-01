@@ -1,2 +1,2 @@
-# Calculator-App-ReactJS-
+# Calculator-App-ReactJS
 Simple ReactJS Calculator Application
