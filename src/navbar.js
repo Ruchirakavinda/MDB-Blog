@@ -16,6 +16,7 @@ import {
   MDBBtn,
   MDBNavbarBrand
 } from 'mdb-react-ui-kit';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   const [showNavRight, setShowNavRight] = useState(false);
@@ -46,12 +47,16 @@ function NavBar() {
           <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' href='#'>
-                Home
+              <NavLink to='/' style={{color:'black'}}>
+               Home
+               </NavLink>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#' active>
+              <MDBNavbarLink href='/authors' active>
+                <NavLink to='/authors' style={{color:'black'}}>
                Authors
+               </NavLink>
               </MDBNavbarLink>
             </MDBNavbarItem>
 
