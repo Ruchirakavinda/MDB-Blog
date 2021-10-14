@@ -62,7 +62,9 @@ function NavBar() {
 
             <MDBNavbarItem>
             <MDBBtn rounded className='mx-2' color='dark'>
+            <NavLink to='/login' style={{color: 'white'}}>
              Log In
+             </NavLink>
             </MDBBtn>
             </MDBNavbarItem>
 
