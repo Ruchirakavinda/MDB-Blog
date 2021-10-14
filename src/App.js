@@ -4,6 +4,8 @@ import NavBar from './navbar';
 import Home from './home';
 import Footer from './footer';
 import Auth from './authors';
+import Login from './login';
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,10 @@ function App() {
           <Route path='/authors' exact>
             <Auth/>
             
+          </Route>
+
+          <Route path='/login' exact>
+            <Login/>
           </Route>
 
           <Redirect to='/' />
